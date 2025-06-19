@@ -22,11 +22,13 @@ Este projeto tem como objetivo integrar análise de dados contábeis de empresas
 
 Dica: Utilize `head(len(df))`
 """
-
 import pandas as pd
+import streamlit as st
+
 df = pd.read_csv("empresas_dados.csv", sep=";")
 
-df.head(len(df))
+st.write(df) 
+
 
 """
 3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano  (peso: 1,0)
