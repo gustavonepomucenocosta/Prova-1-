@@ -23,17 +23,17 @@ Dica: Utilize `head(len(df))`
 
 import pandas as pd
 
-df = pd.read_csv('https://github.com/gustavonepomucenocosta/Prova-1-/blob/main/empresas_dados.csv')
+df = pd.read_csv('empresas_dados.csv')
 
-df.head(len(df))
+st.dataframe(df.head(len(df)))
 
-"""3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano  (peso: 1,0)
+"""
+3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano  (peso: 1,0)
 
 - Margem Líquida = Lucro Líquido / Receita Líquida * 100
 - ROA = Lucro Líquido / Ativo Total *  100
 """
 
-import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("empresas_dados.csv", sep=";")
