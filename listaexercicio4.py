@@ -23,7 +23,7 @@ Dica: Utilize `head(len(df))`
 
 import pandas as pd
 
-df = pd.read_csv('empresas_dados.csv')
+df = pd.read_csv('https://github.com/gustavonepomucenocosta/Prova-1-/blob/main/empresas_dados.csv')
 
 df.head(len(df))
 
